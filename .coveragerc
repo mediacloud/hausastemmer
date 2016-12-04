@@ -1,0 +1,8 @@
+[run]
+source = hausastemmer
+
+[report]
+omit =
+    */python?.?/*
+    */site-packages/nose/*
+    tests/*
