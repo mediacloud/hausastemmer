@@ -27,7 +27,8 @@ Usage
 
    import hausastemmer
 
-   print(hausastemmer.stem('Nijeriya kasa ce a nahiyar Afirka ta yamma.'.split()));
+   for term in 'Nijeriya kasa ce a nahiyar Afirka ta yamma.'.split():
+       print('%s => %s' % (term, hausastemmer.stem(term)))
 
 
 License
