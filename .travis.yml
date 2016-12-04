@@ -3,7 +3,9 @@ python:
   - "2.7"
   - "3.5"
   - "nightly"
+before_install:
+  - pip install coverage coveralls
 script:
-  - nosetests --detailed-errors --with-coverage --cover-package=coverage
+  - nosetests --detailed-errors --with-coverage
 after_success:
   - coveralls
