@@ -10,11 +10,10 @@ class HausaStemmer:
         self.k0 = 0
         self.j = 0  # j is a general offset into the string
         self.h = 0  # h is a hyphen offset into the string
-        self.DictCount = 0  # No of words found in the dictionary
 
-    def __check_dict(self, word):
+    @staticmethod
+    def __check_dict(word):
         if word in ROOT_WORDS:
-            self.DictCount += 1
             return word
         else:
             return ''
