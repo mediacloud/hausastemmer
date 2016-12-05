@@ -19,6 +19,6 @@ def stem(term, lookup=True):
     # FIXME remove len()
     # FIXME implement lookup()
     # FIXME add tests with empty / random / bad data
-    term_stem = __stemmer.stem(p=term, i=0, j=len(term) - 1, lookup=lookup)
+    term_stem = __stemmer.stem(p=term, j=len(term) - 1, lookup=lookup)
 
     return term_stem
