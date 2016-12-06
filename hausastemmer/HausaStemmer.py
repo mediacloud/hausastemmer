@@ -948,6 +948,8 @@ class HausaStemmer:
         so i <= k <= j. To turn the stemmer into a module, declare 'stem' as extern, and delete the remainder of this
         file."""
 
+        p = p.strip()
+
         # FIXME L.V.: sample scripts pass the words as lower-case, should this always be done?
         p = p.lower()
 

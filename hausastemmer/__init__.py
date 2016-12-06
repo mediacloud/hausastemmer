@@ -31,8 +31,6 @@ def stem(term, lookup=True):
     :rtype: str
     """
 
-    term = term.strip()
-
     term_stem = __stemmer.stem(p=term, lookup=lookup)
 
     return term_stem
