@@ -38,7 +38,7 @@ Adapted as a Python module by Linas Valiukas <lvaliukas@cyber.law.harvard.edu>.
     author='Andrew Bimba, Norisma Idris, Norazlina Khamis, Nurul Fazmidar Mohd Noor, Linas Valiukas',
     author_email='andrewbimba@gmail.com, lvaliukas@cyber.law.harvard.edu',
     url='https://github.com/berkmancenter/mediacloud-hausastemmer',
-    keywords="stemmer",
+    keywords="hausa stemmer bimba",
     license="BSD",
     packages=['hausastemmer'],
     package_dir={'hausastemmer': 'hausastemmer'},
