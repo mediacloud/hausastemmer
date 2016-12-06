@@ -1,6 +1,19 @@
 #!/usr/bin/env python
 # coding=utf-8
 
+# Copyright (C) 2013 Bimba Andrew Thomas, 2016 Linas Valiukas
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details <http://www.gnu.org/licenses/>.
+
+
 from setuptools import setup
 
 setup(
@@ -16,7 +29,7 @@ URL: https://bit.ly/hausa-stemming-bimba.
 
 Based on modifications to the implementation of the Porter's Stemming Algorithm by Vivake Gupta (2001).
 
-Copyright (C) 2013, Bimba Andrew Thomas <andrewbimba@gmail.com>, Department of Artificial Intelligence,
+Copyright (C) 2013 Bimba Andrew Thomas <andrewbimba@gmail.com>, Department of Artificial Intelligence,
 FSKTM Universiti Malaya, Kuala Lumpur, Malaysia.
 
 Adapted as a Python module by Linas Valiukas <lvaliukas@cyber.law.harvard.edu>.

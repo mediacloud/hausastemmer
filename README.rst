@@ -35,7 +35,7 @@ Usage
 License
 -------
 
-Copyright (C) 2013, Bimba Andrew Thomas
+Copyright (C) 2013 Bimba Andrew Thomas, 2016 Linas Valiukas
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
