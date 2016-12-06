@@ -31,7 +31,8 @@ def stem(term, lookup=True):
     :rtype: str
     """
 
-    # FIXME maybe trim the stem?
+    term = term.strip()
+
     # FIXME remove len()
     # FIXME implement lookup()
     # FIXME add tests with empty / random / bad data
