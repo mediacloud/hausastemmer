@@ -11,8 +11,8 @@
 # GNU General Public License for more details <http://www.gnu.org/licenses/>.
 
 
-from HausaStemmer import HausaStemmer
-import __about__
+from hausastemmer.HausaStemmer import HausaStemmer
+import hausastemmer.__about__
 
 # noinspection PyRedundantParentheses
 __all__ = ('__version__', 'stem')
