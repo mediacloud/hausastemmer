@@ -1,11 +1,11 @@
 Hausa language stemmer
 ======================
 
-.. image:: https://travis-ci.org/pypt/mediacloud-hausastemmer.svg?branch=master
-  :target: https://travis-ci.org/pypt/mediacloud-hausastemmer
+.. image:: https://travis-ci.org/berkmancenter/mediacloud-hausastemmer.svg?branch=master
+  :target: https://travis-ci.org/berkmancenter/mediacloud-hausastemmer
 
-.. image:: https://coveralls.io/repos/github/pypt/mediacloud-hausastemmer/badge.svg?branch=develop
-  :target: https://coveralls.io/github/pypt/mediacloud-hausastemmer?branch=develop
+.. image:: https://coveralls.io/repos/github/berkmancenter/mediacloud-hausastemmer/badge.svg?branch=develop
+  :target: https://coveralls.io/github/berkmancenter/mediacloud-hausastemmer?branch=develop
 
 Hausa language stemmer reference implementation by Bimba et al., 2015. Uses Hausa affix-rules and reference lookup to
 stem words in Hausa language.
