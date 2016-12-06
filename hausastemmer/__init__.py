@@ -33,8 +33,6 @@ def stem(term, lookup=True):
 
     term = term.strip()
 
-    # FIXME remove len()
-    # FIXME implement lookup()
     # FIXME add tests with empty / random / bad data
     term_stem = __stemmer.stem(p=term, lookup=lookup)
 
