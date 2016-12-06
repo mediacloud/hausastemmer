@@ -12,9 +12,12 @@
 
 
 from HausaStemmer import HausaStemmer
+import __about__
 
 # noinspection PyRedundantParentheses
-__all__ = ('stem')
+__all__ = ('__version__', 'stem')
+
+__version__ = __about__.__version__
 
 __stemmer = HausaStemmer()
 

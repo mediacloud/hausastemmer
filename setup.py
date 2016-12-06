@@ -15,10 +15,11 @@
 
 
 from setuptools import setup
+from hausastemmer.__about__ import __version__
 
 setup(
     name='hausastemmer',
-    version='1.0',
+    version=__version__,
     description='Hausa language stemmer (Bimba et al., 2015)',
     long_description='''Hausa language stemmer reference implementation by Bimba et al., 2015. Uses Hausa affix-rules
 and reference lookup to stem words in Hausa language.
