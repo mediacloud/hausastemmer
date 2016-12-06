@@ -1,4 +1,4 @@
 include *.rst
 include setup.*
-recursive-include src *.py
+recursive-include hausastemmer *.py
 include MANIFEST.in

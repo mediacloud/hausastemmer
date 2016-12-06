@@ -1,3 +1,16 @@
+# Copyright (C) 2013 Bimba Andrew Thomas, 2016 Linas Valiukas
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details <http://www.gnu.org/licenses/>.
+
+
 from .dict_lookup import ROOT_WORDS
 
 
@@ -10,11 +23,10 @@ class HausaStemmer:
         self.k0 = 0
         self.j = 0  # j is a general offset into the string
         self.h = 0  # h is a hyphen offset into the string
-        self.DictCount = 0  # No of words found in the dictionary
 
-    def __check_dict(self, word):
+    @staticmethod
+    def __check_dict(word):
         if word in ROOT_WORDS:
-            self.DictCount += 1
             return word
         else:
             return ''
@@ -929,21 +941,23 @@ class HausaStemmer:
         if self.__chk_center_combo_3():
             self.b = self.b[self.k0:self.k0 + 2] + self.b[self.k0 + 5:self.k + 1]
 
-    def stem(self, p, i, j, lookup=True):
+    def stem(self, p, lookup=True):
         """In stem(p,i,j), p is a char pointer, and the string to be stemmed is from p[i] to p[j] inclusive. Typically i
         is zero and j is the offset to the last character of a string, (p[j+1] == '\0'). The stemmer adjusts the
         characters p[i] ... p[j] and returns the new end-point of the string, k. Stemming never increases word length,
         so i <= k <= j. To turn the stemmer into a module, declare 'stem' as extern, and delete the remainder of this
         file."""
 
+        p = p.strip()
+
         # FIXME L.V.: sample scripts pass the words as lower-case, should this always be done?
         p = p.lower()
 
         # copy the parameters into statics
         self.b = p
-        self.k = j
+        self.k = len(p) - 1
         self.j = self.k
-        self.k0 = i
+        self.k0 = 0
         if self.k <= self.k0 + 1:
             return self.b  # --DEPARTURE--
 
