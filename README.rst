@@ -1,7 +1,7 @@
 Hausa language stemmer
 ======================
 
-.. image:: https://travis-ci.org/berkmancenter/mediacloud-hausastemmer.svg?branch=master
+.. image:: https://travis-ci.org/berkmancenter/mediacloud-hausastemmer.svg?branch=develop
   :target: https://travis-ci.org/berkmancenter/mediacloud-hausastemmer
 
 .. image:: https://coveralls.io/repos/github/berkmancenter/mediacloud-hausastemmer/badge.svg?branch=develop
